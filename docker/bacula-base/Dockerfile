@@ -2,12 +2,15 @@ FROM centos:7
 
 MAINTAINER Eduardo Fraga <eduardo.fraga@fametec.com.br>
 
+# Volumes (Host/Container)
+VOLUME ./etc /opt/bacula/etc
+
 ENV BACULA_VERSION 11.0.5
 
 # get your key on: https://www.bacula.org/bacula-binary-package-download/
 ENV BACULA_KEY 5cee4d079821e
 
-ENV EMAIL suporte@fametec.com.br
+ENV EMAIL leandroramos@disroot.org
 
 RUN rpm --import https://www.bacula.org/downloads/Bacula-4096-Distribution-Verification-key.asc
 
