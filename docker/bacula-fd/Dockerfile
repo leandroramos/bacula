@@ -1,6 +1,7 @@
 FROM fametec/bacula-base:11.0.5
 
-VOLUME ["/opt/bacula/etc"]
+# Volumes (Host/Container)
+VOLUME /etc /opt/bacula/etc
 
 EXPOSE 9102/tcp
 
