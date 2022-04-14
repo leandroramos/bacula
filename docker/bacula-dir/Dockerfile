@@ -2,7 +2,8 @@ FROM fametec/bacula-base:11.0.5
 
 MAINTAINER eduardo@fametec.com.br
 
-VOLUME ["/opt/bacula/etc"]
+# Volumes (Host/Container)
+VOLUME ./etc /opt/bacula/etc
 
 EXPOSE 9101/tcp
 
