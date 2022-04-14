@@ -2,6 +2,9 @@ FROM fametec/bacula-base:11.0.5 AS base
 
 FROM postgres:10
 
+# Volumes (Host/Container)
+VOLUME ./pgdata /var/lib/postgresql/data
+
 MAINTAINER eduardo@fametec.com.br
 
 ENV POSTGRES_PASSWORD bacula
