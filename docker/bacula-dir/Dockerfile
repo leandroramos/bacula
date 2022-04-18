@@ -1,6 +1,6 @@
-FROM fametec/bacula-base:11.0.5
+FROM leandroembu/bacula-base:11.0.5
 
-MAINTAINER eduardo@fametec.com.br
+MAINTAINER leandroramos@disroot.org
 
 # Volumes (Host/Container)
 VOLUME ./etc /opt/bacula/etc
